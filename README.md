@@ -176,4 +176,19 @@ Criar a Rota
         ]
 
 
+Registrar a URLconf com o projeto
 
+    1. abra urls.py do projeto
+    2. adicione o include
+
+        from django.urls import include, path
+    
+    3. dentro de urlpatterns adicione
+
+        path('', include('hello_world.urls')),
+    
+    // o include permite importar módulos URLconf
+    // o path é pra identificar a raiz do URLconf
+    // e o código adicionado no urlpatterns é o que registra nossa url
+
+    
