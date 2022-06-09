@@ -124,3 +124,43 @@ Após isso tem que registrar o aplicativo no projeto
 
         'hello_world.apps.HelloWorldConfig',
     4. salvar
+
+
+Entendendo o conceito de CAMINHOS e EXIBIÇÕES
+    
+    -caminhos
+    
+    em um aplicativo web, as solicitações do usuário são feitas:
+
+    - Navegando para URLs diferentes
+    - Tocando nele
+    - Selecionando um link
+    - Tocando em um botão
+
+    uma rota informa ao django qual funcão executar, quando o usuário faz uma solicitação para uma URL ou caminho específico
+
+    os caminhos no django são registrados pela configuração de urlpatterns
+    esses padrões identificam o que o usuário esta solicitando e determinam qual funcção o django deve tratar a solicitação
+    esses padrões são coletados em um módulo que o Django chama de URLconf
+
+    -exibições
+
+    as exibições determinam quais informações devem ser retornadas ao usuário. Elas são funções ou classes que executam o código em resposta a solicitação do usuário.
+    elas retornam html
+
+
+Criar o modo de exibição
+
+    1. abra view.py de dentro aplicativo hello_world
+    2. substitua pelo código
+
+        from django.shortcuts import render
+        from django.http import HttpResponse
+
+        def index(request):
+            return HttpResponse("Hello, World!")
+
+    //a função HttpResponse permite que você retorne texto ou outros tipo primitivos para o chamador
+
+
+
