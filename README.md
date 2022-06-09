@@ -47,3 +47,11 @@ O conceito de Mapeamento de URLs
     o mapeamento de url no django é chamado de URLconf e serve como sumário para o aplicativo.
     quando uma URL é solicitada esse módulo localiza o link apropriado dentro do projeto e redireciona a solicitação para o arquivo de exibições contido no aplicativo. A exibição por sua vez, processa a solicitação e executa as operações necessárias.
 
+
+Criando um projeto com Django-admin
+
+    django-admin startproject helloproject .
+
+    o ponto "." no final a direita significa que o django-admin vai usar a pasta atual. Se você não colocar um subdiretório adicional será criado.
+
+
