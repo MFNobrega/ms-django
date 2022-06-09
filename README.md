@@ -151,7 +151,7 @@ Entendendo o conceito de CAMINHOS e EXIBIÇÕES
 
 Criar o modo de exibição
 
-    1. abra view.py de dentro aplicativo hello_world
+    1. abra views.py de dentro aplicativo hello_world
     2. substitua pelo código
 
         from django.shortcuts import render
@@ -161,6 +161,19 @@ Criar o modo de exibição
             return HttpResponse("Hello, World!")
 
     //a função HttpResponse permite que você retorne texto ou outros tipo primitivos para o chamador
+
+
+Criar a Rota
+
+    1. crie um arquivo na pasta do app, nome urls.py
+    2. adicione dentro do arquivo
+
+        from django.urls import path
+        from . import views
+
+        urlpatterns = [
+            path('', views.index, name='index'),
+        ]
 
 
 
