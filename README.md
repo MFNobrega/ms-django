@@ -77,5 +77,15 @@ helloproject/
     - urls.py contém as URLs dentro do projeto
     - asgy.py e wsgi.py servem como ponto de entrada paa os servidores Web dependendo do tipo de servidor implantado.
 
+Executar o Projeto
 
-    
+    python manage.py runserver
+
+Verificar se esta Funcionando
+
+    http://localhost:8000
+
+e para Parar o servidor
+
+    Ctrl + C
+
