@@ -101,12 +101,26 @@ Criando o aplicativo Olá Mundo
     Com esse comando o Django cria as pastas e arquivos necessários, e a estrutura a seguir deve estar visível
 
     hello_world/
-    __init__.py
-    admin.py
-    apps.py
-    migrations/
         __init__.py
-    models.py
-    tests.py
-    views.py
+        admin.py
+        apps.py
+        migrations/
+            __init__.py
+        models.py
+        tests.py
+        views.py
 
+
+Após isso tem que registrar o aplicativo no projeto
+
+    Como aplicativos e projetos são separadaos no Django, deve registrar o aplicativo no projeto. Atualizando a variável    INSTALLED_APPS dentro de settings.py adicionando uma referencia a classe de configuração do aplicativo.
+
+    A classe esta em apps.py, com o mesmo nome do projeto (no meu caso) HelloWorldConfig
+
+
+    1. Dentro de helloproject, abra settings.py
+    2. Localize a lista INSTALLED_APPS, que deve estar na linha 33
+    3. Adicione o seguinte no final da lista
+
+        'hello_world.apps.HelloWorldConfig',
+    4. salvar
