@@ -191,4 +191,9 @@ Registrar a URLconf com o projeto
     // o path é pra identificar a raiz do URLconf
     // e o código adicionado no urlpatterns é o que registra nossa url
 
-    
+
+Agora vamos rodar
+
+    python manage.py runserver
+
+abra o navegador
