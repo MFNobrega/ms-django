@@ -55,3 +55,27 @@ Criando um projeto com Django-admin
     o ponto "." no final a direita significa que o django-admin vai usar a pasta atual. Se você não colocar um subdiretório adicional será criado.
 
 
+Explicando a estrutura do Projeto
+
+manage.py
+helloproject/
+    __init__.py
+    settings.py
+    urls.py
+    asgi.py
+    wsgi.py
+
+
+    o manage.py é criado em todos os projetos Django, e tem a mesma função do django-admin
+
+    para visualizar utilize "python manage.py help" para visualizar os comandos
+
+
+    - helloproject é considerado o pacote de Python de seu projeto
+    - init.py é um arquivo vazio que funciona para dizer ao Python que esse diretório deve ser considerado um pacote.
+    - setting.py contém todas as configurações ou definições
+    - urls.py contém as URLs dentro do projeto
+    - asgy.py e wsgi.py servem como ponto de entrada paa os servidores Web dependendo do tipo de servidor implantado.
+
+
+    
