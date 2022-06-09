@@ -42,4 +42,8 @@ Para a instalação do Django (Criar o arquivo requirements.txt)
 
 
 
-    
+O conceito de Mapeamento de URLs
+
+    o mapeamento de url no django é chamado de URLconf e serve como sumário para o aplicativo.
+    quando uma URL é solicitada esse módulo localiza o link apropriado dentro do projeto e redireciona a solicitação para o arquivo de exibições contido no aplicativo. A exibição por sua vez, processa a solicitação e executa as operações necessárias.
+
