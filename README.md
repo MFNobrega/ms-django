@@ -89,3 +89,24 @@ e para Parar o servidor
 
     Ctrl + C
 
+
+Criando o aplicativo Olá Mundo
+
+    Nessa parte vamos entender como os aplicativos são criados e como eles funcionam com o projeto Django
+
+
+    python manage.py startapp hello_world
+
+
+    Com esse comando o Django cria as pastas e arquivos necessários, e a estrutura a seguir deve estar visível
+
+    hello_world/
+    __init__.py
+    admin.py
+    apps.py
+    migrations/
+        __init__.py
+    models.py
+    tests.py
+    views.py
+
